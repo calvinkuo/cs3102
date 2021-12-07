@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS 3102 Final Project</title>
+		<style>
+		body {
+			text-align: center;
+			font-family: sans-serif;
+		}
+		canvas {
+			background-image: url('maze.png');
+		}
+		</style>
+	</head>
+	<body>
+		<canvas id="maze" width="248" height="248">
+			<img src="maze.png" width="248" height="248" alt=""/>
+		</canvas>
+		<br>
+		<button type="button" onclick="button1()">Deterministic</button>
+		<button type="button" onclick="button2()">Non-Deterministic (multiple states)</button>
+		<button type="button" onclick="button3()">Non-Deterministic (always right)</button>
+		<p>Took <span id="step">0</span> steps</p>
+		<script src="maze.js"></script>
+	</body>
+</html>
